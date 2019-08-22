@@ -13,6 +13,7 @@
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('/pages/about', 'PagesController@about')->name('about');
+Route::get('/pages/author', 'PagesController@author')->name('author');
 
 Auth::routes();
 

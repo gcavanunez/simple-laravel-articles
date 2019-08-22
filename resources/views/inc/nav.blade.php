@@ -19,6 +19,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/pages/about">About</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/author">Author</a>
+        </li>
       </ul>
 
       <!-- Right Side Of Navbar -->

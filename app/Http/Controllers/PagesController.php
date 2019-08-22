@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Article;
 
 class PagesController extends Controller
 {
@@ -19,5 +20,13 @@ class PagesController extends Controller
         $data['title'] = 'About Us';
         $data['description'] = 'This simple laravel app is the way we upgraded from the NucliuzMVC';
         return view('pages.about', $data);
+    }
+    public function author()
+    {
+        $nombreDelAuthor = 'Frank';
+        $articles = Article::paginate(3);
+        return view('pages.author', ['author' => $nombreDelAuthor, 'articles' => $articles]);
+        // return response()->json(["articles" => $articles], 200);
+        // view('pages.author', ['author' => $nombreDelAuthor, 'articles' => $articles]);
     }
 }
