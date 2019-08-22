@@ -1,6 +1,8 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+{{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm"> --}}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3" id="main-nav">
   <div class="container">
     <a class="navbar-brand" href="{{ url('/') }}">
+      <img src="/img/nucliuzMVC-logo.png" id="main-logo">
       {{ config('app.name', 'Laravel') }}
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -11,7 +13,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left Side Of Navbar -->
       <ul class="navbar-nav mr-auto">
-
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/about">About</a>
+        </li>
       </ul>
 
       <!-- Right Side Of Navbar -->

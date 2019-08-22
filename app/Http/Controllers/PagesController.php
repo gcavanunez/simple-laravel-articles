@@ -8,7 +8,9 @@ class PagesController extends Controller
 {
     public function index()
     {
-
-        return view('pages.index');
+        $data = array();
+        $data['title'] = 'NucliuzMVC';
+        $data['description'] = 'Simple social network built on the NucliuzMVC PHP framework';
+        return view('pages.index', $data);
     }
 }
