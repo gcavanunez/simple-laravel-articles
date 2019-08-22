@@ -13,7 +13,7 @@
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('/pages/about', 'PagesController@about')->name('about');
-Route::get('/pages/author', 'PagesController@author')->name('author');
+Route::get('/pages/articles', 'PagesController@articles')->name('allArticles');
 
 Auth::routes();
 

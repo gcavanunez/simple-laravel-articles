@@ -20,7 +20,7 @@
           <a class="nav-link" href="/pages/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/author">Author</a>
+          <a class="nav-link" href="/pages/articles">Articles</a>
         </li>
       </ul>
 

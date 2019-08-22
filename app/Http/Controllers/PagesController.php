@@ -21,7 +21,7 @@ class PagesController extends Controller
         $data['description'] = 'This simple laravel app is the way we upgraded from the NucliuzMVC';
         return view('pages.about', $data);
     }
-    public function author()
+    public function articles()
     {
         $nombreDelAuthor = 'Frank';
         $articles = Article::paginate(3);
